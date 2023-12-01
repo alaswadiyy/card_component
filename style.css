@@ -1,0 +1,99 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  position: relative;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  height: 32rem;
+  width: 42rem;
+  position: absolute;
+  top: 8rem;
+  right: 22.9rem;
+}
+
+.firstdiv {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  /* height: 45rem;
+    width: 40rem; */
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.second_div {
+  background-color: white;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1.5rem;
+}
+
+/* Content's Styling */
+.perfume {
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+  opacity: 50%;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+}
+
+.flora {
+  opacity: 50%;
+  line-height: 1.5rem;
+}
+
+.pricing {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.line_through {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: black;
+  opacity: 50%;
+  margin-left: 8px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  padding: 15px;
+  /* margin-left: 1.2rem; */
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: hsl(158, 94%, 13%);
+}
+
+.cta {
+  color: white;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 425px) {
+
+
+  section {
+    /* grid-template-rows: 2fr 2fr; */
+    height: 32rem;
+    width: 42rem;
+    position: absolute;
+    top: 8rem;
+    right: 22.9rem;
+  }
+}

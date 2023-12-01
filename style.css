@@ -1,21 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&family=Rubik:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Open+Sans:wght@400;600&family=Rubik:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: hsl(30, 38%, 92%);
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
 }
 
 section {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 2fr 2fr;
   height: 32rem;
   width: 42rem;
   position: absolute;
-  top: 8rem;
-  right: 22.9rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 20%); */
+  display: flex;
+  width: 45%;
 }
 
 .firstdiv {
   background-image: url(./images/image-product-desktop.jpg);
   background-size: cover;
+  width: 100%;
   /* height: 45rem;
     width: 40rem; */
   border-bottom-left-radius: 20px;
@@ -26,34 +42,45 @@ section {
   background-color: white;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 1.5rem;
+  padding: 2rem;
+  width: 100%;
 }
 
 /* Content's Styling */
 .perfume {
-  font-family: Fraunces;
+  font-family: Montserrat;
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: 4px;
-  opacity: 50%;
+  font-weight: 100;
+  letter-spacing: 6px;
+  /* opacity: 50%; */
+  margin-bottom: 1.5rem;
+  color: hsl(228, 12%, 48%);
 }
 
 h1 {
-  font-family: Montserrat;
+  font-family: Fraunces;
   font-weight: 700;
   font-size: 2.5rem;
-  line-height: 2.2rem;
+  line-height: 3rem;
+  color: hsl(212, 21%, 14%);
 }
 
 .flora {
-  opacity: 50%;
+  font-family: Montserrat;
   line-height: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
 }
 
 .pricing {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
   color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  font-family: Fraunces;
 }
 
 .line_through {
@@ -61,7 +88,11 @@ h1 {
   font-size: 14px;
   color: black;
   opacity: 50%;
-  margin-left: 8px;
+  margin-left: 1rem;
+}
+
+a{
+  text-decoration: none;
 }
 
 button {
@@ -71,6 +102,10 @@ button {
   /* margin-left: 1.2rem; */
   border: none;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 button:hover {
@@ -81,19 +116,46 @@ button:hover {
   color: white;
   font-weight: 600;
   margin-left: 8px;
+  font-family: Montserrat;
 }
 
 /* RESPONSIVENESS */
-
-@media screen and (max-width: 425px) {
-
-
+@media screen and (max-width: 426px) {
   section {
-    /* grid-template-rows: 2fr 2fr; */
-    height: 32rem;
-    width: 42rem;
-    position: absolute;
-    top: 8rem;
-    right: 22.9rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2rem 0;
   }
+  .firstdiv{
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 20px 20px 0 0 ;
+  }
+  .second_div {
+    border-radius: 0 0 20px 20px;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .perfume {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  .flora {
+    line-height: 1.2rem;
+    margin: .8rem 0;
+    font-weight: 300;
+    font-size: .8rem;
+  }
+  button {
+    padding: 12px;
+    margin-top: 1.2rem;
+  }
+
+  /* Add any additional mobile-specific styles here */
 }

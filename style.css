@@ -120,7 +120,7 @@ button:hover {
 }
 
 /* RESPONSIVENESS */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 429px) {
   section {
     display: flex;
     flex-direction: column;
